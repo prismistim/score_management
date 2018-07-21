@@ -32,9 +32,8 @@
   </div>
   <div class="container">
     <h1>ようこそ！</h1>
-    <?php
-      require '../dashboardOAuth.php';
-    ?>
+    <a class="btn btn-outline-primary" href="oauth/login.php">Twitter LOGIN</a>
+    <a class="btn btn-outline-warning" href="oauth/login_mixi.php">mixi LOGIN</a>
   </div>
 </body>
 </html>

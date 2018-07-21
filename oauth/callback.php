@@ -3,12 +3,12 @@
 session_start();
 
 if (getenv('ENV_MODE') == 'dev'){
-  require_once 'common_local.php';
+  require_once 'config/common_local.php';
 }else{
-  require_once 'common_server.php';
+  require_once 'config/common_server.php';
 }
 
-require_once 'twitteroauth/autoload.php';
+require_once '../twitteroauth/autoload.php';
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
@@ -28,4 +28,4 @@ $_SESSION['access_token'] = $connection->oauth("oauth/access_token", array('oaut
 
 session_regenerate_id();
 
-header('location: view/dashboard.php');
+header('location: /dashboard.php');

@@ -13,7 +13,7 @@
 <body>
   <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="#">Bootstrap</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切替">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,7 +32,9 @@
   </div>
   <div class="container">
     <h1>ようこそ！</h1>
-    <a href="../loginOAuth.php">LOGIN</a>
+    <?php
+      require 'oauth/loadUserinfo.php';
+    ?>
   </div>
 </body>
 </html>

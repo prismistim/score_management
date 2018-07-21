@@ -3,12 +3,12 @@
 session_start();
 
 if (getenv('ENV_MODE') == 'dev'){
-  require_once 'common_local.php';
+  require_once 'config/common_local.php';
 }else{
-  require_once 'common_server.php';
+  require_once 'config/common_server.php';
 }
 
-require_once 'twitteroauth/autoload.php';
+require_once '../twitteroauth/autoload.php';
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 
