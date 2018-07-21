@@ -1,0 +1,17 @@
+li.nav-item{
+  font-weight: 600;
+}
+
+nav.bg-blue{
+  background-color: #df0850;
+}
+
+.main{
+  margin: 5px;
+  border: solid 1px #CFCFCF;
+  border-radius: 4px;
+}
+
+.box{
+  margin: 10px;
+}
