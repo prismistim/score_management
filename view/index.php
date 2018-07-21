@@ -32,6 +32,7 @@
   </div>
   <div class="container">
     <h1>ようこそ！</h1>
+    <a href="../loginOAuth.php">LOGIN</a>
   </div>
 </body>
 </html>
